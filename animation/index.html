@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Animation</title>
+        <link href="./assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Menu on image hover -->
+        <div class="root">
+            <div class="menu-on-image-hover">
+                <figure class="hover-menu">
+                    <img src="https://picsum.photos/id/1060/800/480.jpg"/>
+                    <div>
+                        <a href="#">Home</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">About</a>
+                    </div>
+                </figure>
+            </div>
+
+            <!-- image overlay on hover -->
+
+            <div class="image-overlay-on-hover">
+                <figure class="hover-img">
+                    <img src="https://picsum.photos/id/1060/800/480.jpg"/>
+                    <figcaption>
+                        <h3>Tai <br/>Nguyen</h3>
+                    </figcaption>
+                  </figure>
+            </div>
+
+            <!-- Staggered animation -->
+            <div class="staggered-animation">
+                <input type="checkbox" name="menu" id="menu" class="menu-toggler">
+                <label for="menu" class="menu-toggler-label">Menu</label>
+                <ul class="stagger-menu">
+                    <li class="stagger-item" style="--i: 1">Pricing</li>
+                    <li class="stagger-item" style="--i: 2">Account</li>
+                    <li class="stagger-item" style="--i: 3">Support</li>
+                    <li class="stagger-item" style="--i: 4">About</li>
+                </ul>
+            </div>
+
+            <!-- Bouncing loader -->
+            <div class="bouncing-loader-wrapper">
+                <div class="bouncing-loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <!-- Height transition -->
+            <div class="height-transition"> 
+                <div class="trigger">
+                    Hover me to see a height transition.
+                    <div id="height-transition" class="el">
+                        <img class="trigger-img1" src="https://picsum.photos/id/1060/800/480.jpg"/>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image rotate on hover -->
+            <div class="image-rotate-on-hover">
+                <figure class="hover-rotate">
+                    <img src="https://picsum.photos/id/1060/800/480.jpg"/>
+                </figure>
+            </div>
+
+            <!-- Rotating Card -->
+
+            <div class="rotating-card">
+                <div class="card">
+                    <div class="card-side front">
+                        <div>Front Side</div>
+                    </div>
+                    <div class="card-side back">
+                        <div>Back Side</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Hover underline animation-->
+            <div class="hover-underline">
+                <p class="hover-underline-animation">Hover this text to see the effect!</p>
+            </div>
+
+            <!-- border button -->
+            <div class="border-button">
+                <button class="animated-border-button">Submit</button>
+            </div>
+
+            <!-- Ripple loader -->
+            <div class="ripple-loader-wrapper">
+                <div class="ripple-loader">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <!-- Zoom in - out -->
+            <div class="zoom-in-out-wrapper">
+                <div class="zoom-in-out-box"></div>
+            </div>
+
+            <!-- Donut loader -->
+            <div class="donut-wrapper">
+                <div class="donut"></div>
+            </div>
+
+            <!-- Fill button -->
+            <div class="fill-button-wrapper">
+                <button class="animated-fill-button">Submit</button>
+            </div>
+            <!-- icon now -->
+            <div class="container">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+                <div class="dot dot-4"></div>
+              </div>
+              
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>
