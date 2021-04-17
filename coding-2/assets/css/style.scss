@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin trasnlate {
+    position: absolute;
+    top: 0;
+    transition: left ease-out .5s;
+}
+@mixin closeBtn {
+    float: right;
+    color: #fff;
+}
+@mixin item {
+    font-size: 30px;
+    color: #ddd;
+    margin-bottom: 10px;
+    clear: both;
+    text-transform: capitalize;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.box-1 {
+    display: none;
+    list-style: none;
+    height: 0;
+    background-color: #555;
+    transition: height .1s  linear;
+    button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        @include closeBtn;
+    }
+    li {
+       @include item;
+    }
+}
+.box-2 {
+    margin-top: 30px;
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #222;
+    div:first-child {
+        @include trasnlate();
+        background-color: #111;
+        left: -200px;
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        span {
+            @include closeBtn;
+        }
+        a {
+             @include item;
+        }
+    }
+    div:last-child {
+        margin: 30px;
+        border-radius: 4px;
+        @include trasnlate();
+        left:0;
+        button {
+            padding: 10px;
+            background-color: #111;
+            color: #fff;
+            
+        }
+    }
+
+}
