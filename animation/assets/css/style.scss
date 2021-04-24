@@ -412,7 +412,7 @@
         height: 200px;
         position: relative;
         margin: auto;
-        animation: rotate-move 2s linear infinite ;
+        animation: rotate-move .8s ease-in infinite ;
       }
       
       .dot { 
@@ -429,7 +429,7 @@
       }
       @for $i from 1 through 4 {
         .dot-#{$i} {
-          animation: dot-#{$i}-move 1s linear infinite;
+          animation: dot-#{$i}-move .8s ease-in infinite ;
 
         }
       }
@@ -459,6 +459,8 @@
 
 @keyframes rotate-move {
   0% {transform:  rotate(0deg)}
+  // 50% {transform:  rotate(360deg)}
+  // 80% {transform:  rotate(360deg)}
   100% {transform:  rotate(360deg)}
 }
 

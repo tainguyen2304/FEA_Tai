@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- GOOGLE MAP -->
+    <style type="text/css">
+        #googleMap {
+          height: 400px;
+          width: 100%;
+        }
+    </style>
+    <script>
+      function myMap() {
+        // lây kinh đọ và vĩ độ 
+      const location = { lat: 10.22, lng: 106.23 };
+        // tạo một đối tượng mới từ đối tượng Map và hiển thị trong '#googleMap'
+      const map = new google.maps.Map(document.getElementById("googleMap"),{
+        // phóng to
+        zoom:4,
+        // căn giữa
+        center: location
+      });
+      // phuong thức 
+      const market = new google.maps.Market({
+        position: location,
+        map: map,
+        title: "hello word",
+      });
+      }
+
+    </script>
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <!--  -->
+    <!-- position-fixed-top-0 / width: 100% -->
+    <header class="fixed-top w-100 "> 
+      <!-- navbar-expand-lg: show navbar ở mản hình desktop 
+            navbar-light: màu thẻ a
+            bg-light: màu bg
+            navbar: d-flex cho element
+      -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- khối bao bọc  -->
+          <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="#">
+                <img src="./assets/img/travel-icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top"> Travel
+            </a>
+            <!-- hiện icon menu để scroll menu ở table và mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  navbar-collapse: d-flex 
+                  collapse: ẩn navbar ở desktop và hiện ở table/mobile
+            -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--  cho các item nằm ngang hàng nhau -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- dịnh dạng cho chữ  -->
+                <li class="nav-item">
+                  <a class="nav-link  " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Link</a>
+                </li>
+                <!-- dropdown: class wrapper khi sủ dụng dropdown -->
+                <li class="nav-item dropdown">
+                  <!--dropdown-toggle:  hiện subnav khi active -->
+                  <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="w-100 mb-3"><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <!--dropdown-divider: đường ngang dùng để phân chia các dropdown-item -->
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <!-- me-2: margin-right
+                      form-control: dịnh dạng cho thẻ input
+                -->
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <!-- btn: dịnh dạng cho các button
+                    btn-out.. : màu 
+                -->
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="mt-5 pt-2"> 
+      <!-- carousel: làm cho các item di chuyển  
+          slide: di chuyển mượn hơn
+          data-bs-... : chế độ di chuyển các slide
+      -->
+      <div id="carousel-block-1" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+            <!-- active: mạc định hiện carousel-item khi tải web-->
+            <div class="carousel-item active">
+              <img src="./assets/img/img (70).jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h1>Travel</h1>
+                  <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti <br> consequuntur.</p>
+                  <button class="btn btn-outline-light">Read more
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-richtext-fill" viewBox="0 0 16 16">
+                          <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 4.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V7.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V7s1.54-1.274 1.639-1.208zM5 9h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z"/>
+                        </svg>
+                  </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/img (129).jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                  <h1>Travel</h1>
+                  <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti <br> consequuntur.</p>
+                  <button class="btn btn-outline-light">Read more
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-richtext-fill" viewBox="0 0 16 16">
+                          <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 4.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V7.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V7s1.54-1.274 1.639-1.208zM5 9h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z"/>
+                        </svg>
+                  </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/img (130).jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                  <h1>Travel</h1>
+                  <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti <br> consequuntur.</p>
+                  <button class="btn btn-outline-light">Read more
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-richtext-fill" viewBox="0 0 16 16">
+                          <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 4.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V7.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V7s1.54-1.274 1.639-1.208zM5 9h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z"/>
+                        </svg>
+                  </button>
+              </div>
+            </div>
+          </div>
+          <!-- data-bs-target: có giá trị là id của phần tử chứa carousel
+              data-bs-slide: 
+                + prev: quay lại slide trước
+                + next: tới slide tiếp theo
+                carousel-control-prev/next: icon
+          -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-block-1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-block-1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+      </div>
+      <!--  Best Features-->
+      <div class="container text-center py-5">
+          <h1 class="mb-5 fw-bold">Best Features</h1>
+          <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure, consectetur nostrum numquam consequatur, <br> nemo, maxime aperiam nesciunt doloribus repudiandae odit expedita fuga amet! At quaerat iste aperiam placeat maiores.</p>
+          <!-- row: chia hàng -->
+          <div class="row mt-5">
+            <!-- col: chia cột (khi các phần tử đều có col thì sẽ có width bằng nhau) -->
+              <div class="card col border-0">
+                <!-- border-radius img -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-camera-fill card-img-top text-warning " viewBox="0 0 16 16"  >
+                      <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                      <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                    </svg>
+                    <!-- padding lại phần body của thẻ -->
+                  <div class="card-body">
+                    <!-- lầm đậm , to chữ , margin-bottom -->
+                    <h5 class="card-title fs-4 fw-bold">Experience</h5>
+                    <!-- phần tử cuối có mb-0 -->
+                    <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cum minus suscipit eius sapiente?</p>
+                  </div>
+              </div>
+              <div class="card col border-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-suit-heart-fill card-img-top text-danger" viewBox="0 0 16 16">
+                      <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                    </svg>
+                  <div class="card-body">
+                    <h5 class="card-title fs-4 fw-bold">Happiness</h5>
+                    <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cum minus suscipit eius sapiente?</p>
+                  </div>
+              </div>
+              <div class="card col border-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bicycle card-img-top text-primary" viewBox="0 0 16 16">
+                      <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"/>
+                    </svg>
+                  <div class="card-body">
+                    <h5 class="card-title fs-4 fw-bold">Adventure</h5>
+                    <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cum minus suscipit eius sapiente?</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Stunning Examples -->
+      <div class="container pb-5 text-center">
+          <hr>
+          <h1 class="text-center fw-bold my-5">Stunning Examples</h1>
+          <div class="row ">
+            <!-- col-4: width chiếm 4 cột trong 12 cột  -->
+              <div class="card col-4 border-0">
+                  <img src="./assets/img/10.jpg" alt="" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bold">Heading</h5>
+                    <p class="card-text text-dark pb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nesciunt quas, atque perspiciatis velit ullam quasi, voluptates.</p>
+                  </div>
+              </div>
+              <div class="card col-4 border-0">
+                  <img src="./assets/img/11.jpg" alt="" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bold">Heading</h5>
+                    <p class="card-text text-dark pb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nesciunt quas, atque perspiciatis velit ullam quasi, voluptates.</p>
+                  </div>
+              </div>
+              <div class="card col-4 border-0">
+                  <img src="./assets/img/13.jpg" alt="" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bold">Heading</h5>
+                    <p class="card-text text-dark pb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nesciunt quas, atque perspiciatis velit ullam quasi, voluptates.</p>
+                  </div>
+              </div>
+              <div class="card col-4 border-0">
+                  <img src="./assets/img/29.jpg" alt="" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bold">Heading</h5>
+                    <p class="card-text text-dark pb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nesciunt quas, atque perspiciatis velit ullam quasi, voluptates.</p>
+                  </div>
+              </div>
+              <div class="card col-4 border-0">
+                  <img src="./assets/img/48.jpg" alt="" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bold">Heading</h5>
+                    <p class="card-text text-dark pb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nesciunt quas, atque perspiciatis velit ullam quasi, voluptates.</p>
+                  </div>
+              </div>
+              <div class="card col-4 border-0">
+                  <img src="./assets/img/49.jpg" alt="" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title fs-5 fw-bold">Heading</h5>
+                    <p class="card-text text-dark pb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nesciunt quas, atque perspiciatis velit ullam quasi, voluptates.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Gallery heading -->
+      <div class="container pb-5">
+          <hr class="p-0 m-0">
+          <h1 class="fw-bold text-center my-5">Gallery heading</h1>
+          <div class="row ">
+            <!-- col-md-6: khi màn hình >= 768px  thì chia 1 hàng 2 cột, trường hợp còn lại thì 1 hàng 1 cột 
+                  col-sm: khi màn hình >= 576px  thì chia 1 hàng 2 cột, trường hợp còn lại thì 1 hàng 1 cột 
+            -->
+              <div class="col-sm col-md-6 p-4">
+                  <div id="carousel-block-2" class="carousel slide" data-bs-interval="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carousel-block-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carousel-block-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carousel-block-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="./assets/img/img (129).jpg" alt="" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item ">
+                              <img src="./assets/img/img (130).jpg" alt="" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item ">
+                              <img src="./assets/img/img (70).jpg" alt="" class="d-block w-100">
+                          </div>
+                      </div>
+                      <button class="carousel-control-prev" type="butotn" data-bs-target="#carousel-block-2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel-block-2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </button>
+                  </div>
+              </div>
+              <div class="col-sm col-md-6 p-4">
+                  <div class="card border-0">
+                      <div class="card-img-top text-primary fw-bold">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                              <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                          </svg>
+                            Lifestyle
+                      </div>
+                      <div class="card-body p-0">
+                          <h2 class="card-title  my-3 fw-bold">This is title of the news</h2>
+                          <p class="card-text text-dark">Nam libero tempore, cum soluta noblis est eligendi optio cumque hihil impedit quo minus id quod maxinme placeat facere possimus, omnis voluptas  assumenda est, omnis dolor repellendus et aut officils debitis aut rerum.
+                              <br><br>
+                          Nam libero tempore, cum soluta noblis est eligendi optio cumque hihil impedit quo minus id quod maxinme placeat facere possimus, omnis voluptas  assumenda est, omnis dolor repellendus et aut officils debitis aut rerum. 
+                              <br><br>
+                          by <span class="fw-bold">Jessica Clank</span>, 26/08/2016
+                          </p>
+                          <a href="#" class="btn btn-primary  text-dark">Read more</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Form -->
+      <div class="container pb-5">
+          <hr>
+          <h1 class="text-center my-5 fw-bold">Contact us</h1>
+          <!-- đẩy các phần tử con xuống điểm cuối theo chiều main-axis -->
+         <ul class="nav justify-content-end mb-4">
+           <li class="nav-item">
+             <a href="" class="nav-link text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
+              </svg>
+              New York,NY 10012
+             </a>
+           </li>
+           <li class="nav-item">
+            <a href="" class="nav-link text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+              </svg>
+             Mon-Fri, 8:00-22:00  
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+             + 01 234 567 89
+            </a>
+          </li>
+         </ul>
+          <div class="row ">
+            <!--  -->
+              <div class="col-md-5">
+                  <div class="mb-2">
+                      <label for="name">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                      </label>
+                      <!-- dịnh dạng cho input  -->
+                      <input type="text" class="form-control" id="name">
+                      <p class="text-dark fw-bold ">Your name</p>
+                  </div>
+                  <!-- margin-bottom -->
+                  <div class="mb-2">
+                      <label for="email">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                            </svg>
+                      </label>
+                      <input type="text" class="form-control " id="email">
+                      <p class="text-dark fw-bold ">Email</p>
+                  </div>
+                  <div class="mb-2">
+                      <label for="subject">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                              <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                            </svg>
+                      </label>
+                      <input type="text" class="form-control " id="subject">
+                      <p class="text-dark fw-bold ">Subject</p>
+                  </div>
+                  <!-- margin theo chiều dọc -->
+                  <div class="my-4">
+                      <textarea name="message" id="message" class="form-control" rows="3"></textarea>
+                      <label class="fw-bold" >Your mesage</label>
+                  </div>
+                  <!-- căn giữa  content -->
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary px-4">Send</button>
+                  </div>
+                  
+              </div>
+              <div class="col-md-6 ms-auto">
+                <!-- box chứa google map -->
+                  <div id="googleMap" class="p-4"></div>
+              </div>
+          </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container pb-5">
+        <div class="d-flex align-items-center justify-content-between px-2 mb-5">
+          Get connected with us on social networks!
+          <ul class="nav">
+            <li class="nav-item"><a href="" class="nav-link text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </a></li>
+            <li class="nav-item"><a href="" class="nav-link text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </a></li>
+            <li class="nav-item"><a href="" class="nav-link text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+              </svg>
+            </a></li>
+            <li class="nav-item"><a href="" class="nav-link text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+            </a></li>
+            <li class="nav-item"><a href="" class="nav-link text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-sm col-md-3  p-3">
+            <h4 class=" fw-bold mb-5"> <span class="border-bottom pb-2">COMPA</span>NY NAME</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ea temporibus nihil atque harum! Laborum facere quae quisquam magni molestiae dolorem debitis nostrum eum quidem ullam! Enim nemo quasi maiores?
+            </p>
+          </div>
+          <div class="col-sm col-md-3 p-3">
+            <h4 class=" fw-bold mb-5"> <span class="border-bottom pb-2">PRODU</span>CTS</h4>
+            <ul class="nav">
+              <li class="w-100 mb-3"><a href="">MDBootstrap</a></li>
+              <li class="w-100 mb-3"><a href="">MDWordPress</a></li>
+              <li class="w-100 mb-3"><a href="">BrandFlow</a></li>
+              <li class="w-100 mb-3"><a href="">Bootstrap Angular</a></li>
+            </ul>
+          </div>
+          <div class="col-sm col-md-3  p-3">
+            <h4 class=" fw-bold mb-5"> <span class="border-bottom pb-2"> USEFUL</span> LINKS</h4>
+            <ul class="nav">
+              <li class="w-100 mb-3"><a href="">Your Account</a></li>
+              <li class="w-100 mb-3"><a href="">Become an Affiliate</a></li>
+              <li class="w-100 mb-3"><a href="">Shipping Rates</a></li>
+              <li class="w-100 mb-3"><a href="">Help</a></li>
+            </ul>
+          </div>
+          <div class="col-sm col-md-3  p-3">
+            <h4 class=" fw-bold mb-5"> <span class="border-bottom pb-2">CONTA</span>CT</h4>
+            <ul class="nav">
+              <li class="w-100 mb-3"><a href="" class="text-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                </svg>
+                New York, NY 10012, US
+              </a></li>
+              <li class="w-100 mb-3"><a href="" class="text-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg>
+                info@example.com
+              </a></li>
+              <li class="w-100 mb-3"><a href="" class="text-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                + 01 234 567 89
+              </a></li>
+              <li class="w-100 mb-3"><a href="" class="text-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-break-fill" viewBox="0 0 16 16">
+                  <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V9H2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM2 12h12v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2zM.5 10a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z"/>
+                </svg>
+                + 01 234 567 89
+              </a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <!-- END -->
+    <div class="d-flex pb-3">
+        <div class="m-auto">
+          © 2018 Copyright: <a href="">MDBootrap.com</a>
+        </div>
+    </div>
+    </footer>
+    <!-- nhúng địa chỉ API google  tạo từ project  -->
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCB5Cpj1RxGJ4L9AI-44zYlRRQLD_QGpvA&callback=myMap&libraries=&v=weekly" async></script>
+</body>
+</html>
+
+
+
