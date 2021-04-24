@@ -422,8 +422,8 @@ html {
   height: 200px;
   position: relative;
   margin: auto;
-  -webkit-animation: rotate-move 2s linear infinite;
-          animation: rotate-move 2s linear infinite;
+  -webkit-animation: rotate-move .8s ease-in infinite;
+          animation: rotate-move .8s ease-in infinite;
 }
 
 .root .dot {
@@ -440,23 +440,23 @@ html {
 }
 
 .root .dot-1 {
-  -webkit-animation: dot-1-move 1s linear infinite;
-          animation: dot-1-move 1s linear infinite;
+  -webkit-animation: dot-1-move 0.8s ease-in infinite;
+          animation: dot-1-move 0.8s ease-in infinite;
 }
 
 .root .dot-2 {
-  -webkit-animation: dot-2-move 1s linear infinite;
-          animation: dot-2-move 1s linear infinite;
+  -webkit-animation: dot-2-move 0.8s ease-in infinite;
+          animation: dot-2-move 0.8s ease-in infinite;
 }
 
 .root .dot-3 {
-  -webkit-animation: dot-3-move 1s linear infinite;
-          animation: dot-3-move 1s linear infinite;
+  -webkit-animation: dot-3-move 0.8s ease-in infinite;
+          animation: dot-3-move 0.8s ease-in infinite;
 }
 
 .root .dot-4 {
-  -webkit-animation: dot-4-move 1s linear infinite;
-          animation: dot-4-move 1s linear infinite;
+  -webkit-animation: dot-4-move 0.8s ease-in infinite;
+          animation: dot-4-move 0.8s ease-in infinite;
 }
 
 @-webkit-keyframes dot-4-move {
