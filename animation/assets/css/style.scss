@@ -250,19 +250,19 @@
   }
   
   .root .card .front {
-    -webkit-transform: rotateY(0eg);
-            transform: rotateY(0eg);
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
     background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(230, 165, 45, 0.904)), to(rgba(61, 61, 226, 0.988)));
     background-image: linear-gradient(to top right, rgba(230, 165, 45, 0.904), rgba(61, 61, 226, 0.988));
     -webkit-transition: .2s linear;
     transition: .2s linear;
-    -webkit-transition-delay: .2s;
-            transition-delay: .2s;
+    // -webkit-transition-delay: .2s;
+    //         transition-delay: .2s;
   }
   
   .root .card .back {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
     position: absolute;
     top: 0;
     -webkit-transition: left .4s ease-out;
@@ -274,17 +274,17 @@
   }
   
   .root .card:hover .front {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-    -webkit-transition-delay: 0;
-            transition-delay: 0;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    // -webkit-transition-delay: 0;
+    //         transition-delay: 0;
   }
   
   .root .card:hover .back {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    -webkit-transition-delay: .4s;
-            transition-delay: .4s;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    // -webkit-transition-delay: .4s;
+    //         transition-delay: .4s;
   }
   
   .root .hover-underline {
@@ -364,7 +364,7 @@
                   animation: zoom 1s ease-out infinite;
               }
               div:last-child {
-                animation-delay: -0.5s;
+                animation-delay: 0.5s;
               }
           }
       }
@@ -458,10 +458,8 @@
 }
 
 @keyframes rotate-move {
-  0% {transform:  rotate(0deg)}
-  // 50% {transform:  rotate(360deg)}
-  // 80% {transform:  rotate(360deg)}
-  100% {transform:  rotate(360deg)}
+  0% {transform:  rotate(0deg) }
+  100% {transform:  rotate(360deg) }
 }
 
 @keyframes index {
