@@ -1,0 +1,171 @@
+#signUp {
+    .signup{
+        width:100%;
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 1em 1em 8em 1em;
+        .brand {
+            padding-top: 40px;
+            font-size: 16px;
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 32px;
+            margin-top: 40px;
+        }
+        .signupFB {
+            width: 60%;
+            border-radius: 28px;
+            color: #fff;
+            font-size: 16px;
+            padding: 12px 0;
+        }
+        a {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        @include btnHover();
+        p {
+            font-size: 12px;
+            text-align: start;
+            color: #000;
+        }
+    }
+    .signUped {
+        background: rgba(29, 29, 29, 0.9);
+        font-size: 24px;
+        bottom: 0;
+        transition: .2s ease-in ;
+        .box {
+            border-radius: 12px;
+            color: #fff;
+            background-image: linear-gradient(to bottom, rgb(71, 124, 111), rgb(112, 57, 57));
+        }    
+    }
+}
+#wrapper-login{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+    background: #fff;
+    padding: 1em;
+    z-index: 50;
+    #login{
+       .login {
+          max-width: 450px;
+          width: 100%;
+          .loginWith {
+              text-align: center;
+              letter-spacing: 2px;
+              font-weight: bold;
+              text-transform: uppercase;
+              a {
+                  font-size: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+              }
+              a:first-child {
+                  background-color:#3b5998 ;
+              }
+              a:hover {
+                  background-color: #999;
+                  color: #fff !important;
+                  transition: .1s ease-in;
+                }
+                a:first-child:hover {
+                  background-color:#3b5998 ;
+                    opacity: .7;
+                }
+            }
+       }
+       .login-btn {
+           letter-spacing: 2px;
+           font-size: 14px;
+           text-transform: uppercase;
+           cursor: pointer;
+       }
+       .login-btn:hover {
+           opacity: .7;
+       }
+       .signUpEnd {
+           @extend .login-btn;
+           color: #333;
+       }
+       .signUpEnd:hover {
+           background-color: #999;
+           color: #fff;
+           transition: .1s ease-in;
+       }
+    }
+    .loginEd {
+        background: rgba(29, 29, 29, 0.9);
+        font-size: 24px;
+        bottom: 0;
+        transition: .2s ease-in ;
+        .box {
+            border-radius: 12px;
+            color: #fff;
+            background-image: linear-gradient(to bottom, rgb(71, 124, 111), rgb(112, 57, 57));
+        }    
+    }
+}
+
+.or {
+    color: #7f7f7f;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.or::before{
+    content: "";
+    border-top: 1px solid;
+    width: 38%;
+    position: absolute;
+    top: 48%;
+    left:5%;
+}
+.or::after {
+    content: "";
+    border-top: 1px solid #7f7f7f ;
+    width: 38%;
+    position: absolute;
+    top: 48%;
+    right:5%;
+
+}
+form{
+    .form-group {
+        padding-bottom: 24px;
+        input {
+            padding: 14px;
+        }
+    }
+    .form-label {
+        font-size: 14px;
+        color: #000;
+        font-weight: bolder;
+    }
+    .form-check {
+        padding: 0;
+        label {
+            font-size: 14px;
+        }
+    }
+    .btn {
+        padding: 12px 40px;
+        border-radius: 24px;
+        background-color: $colorBtnListen;
+    }
+    @include btnHover();
+}
+

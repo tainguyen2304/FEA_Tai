@@ -1,0 +1,185 @@
+$colorBtnListen : #1db954;
+$colorCardTiTle: #fff; 
+$colorText: #b3b3b3;
+$colorSubnav: #2e77d0;
+$SM: 480px;
+$MD: 768px;
+$XL: 1024px;
+@mixin  responsive($width) {
+    @if $width == SM
+    {
+        @media only screen and (max-width:$SM) {@content;}
+    }
+    @else if $width == MD
+    {
+        @media  (min-width: #{$SM + 1px}) and (max-width: #{$XL - 1px}){@content;}
+    }
+    @else if $width == XL
+    {
+        @media only screen and (min-width:$XL) {@content;}
+    }
+}
+@mixin bg-card {
+.card-search--xanhdam {
+    background-color: #27856a;
+}
+.card-search--xanhduong {
+    background-color: #1e3264;
+}
+.card-search--tim {
+    background-color: #8d67ab;
+}
+.card-search--do {
+    background-color: #e8115b;
+}
+.card-search--xam {
+    background-color: #535353;
+}
+.card-search--xanhlot {
+    background-color: #c3f0c8;
+}
+.card-search--xanhla {
+    background-color: #148a08;
+}
+.card-search--xanhbien {
+    background-color: #477d95;
+}
+.card-search--dodam {
+    background-color: #8c1932;
+}
+.card-search--camdam {
+    background-color: #ba5d07;
+}
+.card-search--hong {
+    background-color: #dc148c;
+}
+.card-search--xanhreu {
+    background-color: #608108;
+}
+.card-search--timdam {
+    background-color: #503750;
+}
+.card-search--dotuoi {
+    background-color: #e61e32;
+}
+.card-search--hongdam {
+    background-color: #af2896;
+}
+.card-search--cam {
+    background-color: #f59b23;
+}
+.card-search--xanhbienlot {
+    background-color: #a0c3d2;
+}
+.card-search--docam {
+    background-color: #e13300;
+}
+.card-search--xanhbiendam {
+    background-color: #0d73ec;
+}
+.card-search--camsang {
+    background-color: #ff6437;
+}
+}
+@mixin btnHover {
+    .btn:hover {
+        transform: scale(1.1);
+        transition: .2s linear;
+    }
+}
+@mixin lineClamp($a) {
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $a;
+}
+@mixin bg-page {
+    .bg--Vpop-Khong-The-Thieu {
+        background-image: linear-gradient(to bottom,#f59d21da,rgb(221, 129, 23),rgb(201, 118, 23),#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Pop-Siring {
+        background-image: linear-gradient(to bottom,#f5739f,#833d54,#30171f,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Nghe-gi {
+        background-image: linear-gradient(to bottom,#cb7d1c,#774a12,#241605,#111,#111,#111,#111,#111,#111)
+    }
+    .bg--Fresh-Find {
+        background-image: linear-gradient(to bottom,  #8d1c23,  #531116,  #2b090b,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Top50-VietNam {
+        background-image: linear-gradient(to bottom,  #af1d2e,  #af1a2c,  #33090e,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Top50-Global{
+        background-image: linear-gradient(to bottom,  #0e223a,  #0a1a2c,  #091727,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Tat-Den{
+        background-image: linear-gradient(to bottom,  #3c2828, #312121,  #221717,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Baby-Sleep{
+        background-image: linear-gradient(to bottom,  #d6d6d6, #868686, #4b4b4b,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Peaceful-Piano {
+        background-image: linear-gradient(to bottom,  #aac6e1, #5c6d7c, #2e363d,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Sleep {
+        background-image: linear-gradient(to bottom,  #17294e, #111f3b, #0e1a31,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Music-For-Concentration {
+        background-image: linear-gradient(to bottom,  #4b4b4b,#383838,#222222,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Intense-Studying,
+    .bg--Em-Dem {
+        background-image: linear-gradient(to bottom,  #b9c0c0,#616666,#2e3030,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Rain-Sounds {
+        background-image: linear-gradient(to bottom,  #667b90,#455361,#262e36,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Ta-Noi-No-Dzui {
+        background-image: linear-gradient(to bottom,  #483348,#3a293a,#2c202c,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Phut-Co-Don-Ngay-Mua {
+        background-image: linear-gradient(to bottom,  #5d6c79,#39424b,#262c31,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Dieu-Buon-Nhat {
+        background-image: linear-gradient(to bottom,  #516d74,#2b3a3d,#1d2629,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Alone-Again {
+        background-image: linear-gradient(to bottom,  #748a9e,#434f5a,#2b333b,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Young-Wild-Free {
+        background-image: linear-gradient(to bottom,  #bdc3c3,#717474,#343535,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--New-Music-Friday-Vietnam {
+        background-image: linear-gradient(to bottom, #db422d,#7c261b,#46150f,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Save-Your-Tears-Remix {
+        background-image: linear-gradient(to bottom, #68140a,#941c0f,#380b06,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Khi-Em-Lon {
+        background-image: linear-gradient(to bottom, #792c25,#4d1c17,#381411,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--de-quen {
+        background-image: linear-gradient(to bottom,#5b399e,#392463,#1f1336,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--rang-khon {
+        background-image: linear-gradient(to bottom,#cbbd9b,#79715e,#353128,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--THoai-Mai-Gac-Chan-Len{
+        background-image: linear-gradient(to bottom,#355042,#273a30,#1d2c24,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--Tu-Man-Anh{
+        background-image: linear-gradient(to bottom,#443037,#2e2125,#2b1e23,#111,#111,#111,#111,#111,#111);
+    }
+    
+    .bg--Dinner-With-Friends{
+        background-image: linear-gradient(to bottom,#963609,#963609,#963609,#111,#111,#111,#111,#111,#111);
+    }
+    
+    .bg--Songs-to-Sing-in-the-Shower {
+        background-image: linear-gradient(to bottom, #68140a,#941c0f,#380b06,#111,#111,#111,#111,#111,#111);
+    }
+    .bg--liked-Songs {
+        background-color: #131212;
+    }
+}
