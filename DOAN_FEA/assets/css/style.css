@@ -1,0 +1,2683 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html::-webkit-scrollbar {
+  background-color: #181818;
+  width: .7em;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #575757;
+  height: .1em;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #d3d3d3;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bg-login {
+  background-color: #1db954;
+}
+
+.toggle-color-controls {
+  color: #1db954 !important;
+}
+
+.row {
+  margin-right: 0;
+}
+
+.bi-heart-fill {
+  color: #fd4545;
+}
+
+.open-app {
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #1db954;
+}
+
+.bg--Vpop-Khong-The-Thieu {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f59d21da), color-stop(#dd8117), color-stop(#c97617), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #f59d21da, #dd8117, #c97617, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Pop-Siring {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5739f), color-stop(#833d54), color-stop(#30171f), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #f5739f, #833d54, #30171f, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Nghe-gi {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cb7d1c), color-stop(#774a12), color-stop(#241605), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #cb7d1c, #774a12, #241605, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Fresh-Find {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8d1c23), color-stop(#531116), color-stop(#2b090b), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #8d1c23, #531116, #2b090b, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Top50-VietNam {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af1d2e), color-stop(#af1a2c), color-stop(#33090e), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #af1d2e, #af1a2c, #33090e, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Top50-Global {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0e223a), color-stop(#0a1a2c), color-stop(#091727), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #0e223a, #0a1a2c, #091727, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Tat-Den {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c2828), color-stop(#312121), color-stop(#221717), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #3c2828, #312121, #221717, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Baby-Sleep {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6d6d6), color-stop(#868686), color-stop(#4b4b4b), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #d6d6d6, #868686, #4b4b4b, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Peaceful-Piano {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#aac6e1), color-stop(#5c6d7c), color-stop(#2e363d), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #aac6e1, #5c6d7c, #2e363d, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Sleep {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#17294e), color-stop(#111f3b), color-stop(#0e1a31), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #17294e, #111f3b, #0e1a31, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Music-For-Concentration {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4b4b4b), color-stop(#383838), color-stop(#222222), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #4b4b4b, #383838, #222222, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Intense-Studying,
+.bg--Em-Dem {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b9c0c0), color-stop(#616666), color-stop(#2e3030), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #b9c0c0, #616666, #2e3030, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Rain-Sounds {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#667b90), color-stop(#455361), color-stop(#262e36), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #667b90, #455361, #262e36, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Ta-Noi-No-Dzui {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#483348), color-stop(#3a293a), color-stop(#2c202c), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #483348, #3a293a, #2c202c, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Phut-Co-Don-Ngay-Mua {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5d6c79), color-stop(#39424b), color-stop(#262c31), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #5d6c79, #39424b, #262c31, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Dieu-Buon-Nhat {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#516d74), color-stop(#2b3a3d), color-stop(#1d2629), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #516d74, #2b3a3d, #1d2629, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Alone-Again {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#748a9e), color-stop(#434f5a), color-stop(#2b333b), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #748a9e, #434f5a, #2b333b, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Young-Wild-Free {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bdc3c3), color-stop(#717474), color-stop(#343535), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #bdc3c3, #717474, #343535, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--New-Music-Friday-Vietnam {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#db422d), color-stop(#7c261b), color-stop(#46150f), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #db422d, #7c261b, #46150f, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Save-Your-Tears-Remix {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#68140a), color-stop(#941c0f), color-stop(#380b06), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #68140a, #941c0f, #380b06, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Khi-Em-Lon {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#792c25), color-stop(#4d1c17), color-stop(#381411), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #792c25, #4d1c17, #381411, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--de-quen {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b399e), color-stop(#392463), color-stop(#1f1336), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #5b399e, #392463, #1f1336, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--rang-khon {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cbbd9b), color-stop(#79715e), color-stop(#353128), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #cbbd9b, #79715e, #353128, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--THoai-Mai-Gac-Chan-Len {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#355042), color-stop(#273a30), color-stop(#1d2c24), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #355042, #273a30, #1d2c24, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Tu-Man-Anh {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#443037), color-stop(#2e2125), color-stop(#2b1e23), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #443037, #2e2125, #2b1e23, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Dinner-With-Friends {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#963609), color-stop(#963609), color-stop(#963609), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #963609, #963609, #963609, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--Songs-to-Sing-in-the-Shower {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#68140a), color-stop(#941c0f), color-stop(#380b06), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+  background-image: linear-gradient(to bottom, #68140a, #941c0f, #380b06, #111, #111, #111, #111, #111, #111);
+}
+
+.bg--liked-Songs {
+  background-color: #131212;
+}
+
+#main {
+  background-color: #181818;
+}
+
+#main .row {
+  --bs-gutter-x: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  #main .m-Logined {
+    padding-left: 2em;
+    padding-bottom: 1em;
+  }
+  #main .m-Logined .beLogin {
+    max-width: 20em;
+  }
+  #main .m-Logined .beLogin .nameUser {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: .5em;
+  }
+  #main .subnav-username {
+    position: fixed;
+    left: 60% !important;
+    right: 90% !important;
+    top: 20%;
+    bottom: 58% !important;
+    z-index: 1000;
+  }
+  #main .row {
+    padding: 0;
+  }
+  #main .nav-menu {
+    display: block;
+    padding-top: 2.5em;
+    height: 100%;
+  }
+  #main .tap .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 47px;
+    font-size: 26px;
+    margin-left: 1em;
+  }
+  #main .tap .navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+  }
+  #main .tap .nav-link {
+    color: #b3b3b3;
+    text-align: start;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    padding: 12px 20px;
+  }
+  #main .tap .nav-link svg {
+    margin-right: 6px;
+  }
+  #main .tap .nav-link .svg {
+    display: inline-block;
+    width: 24px;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(68, 0, 255, 0.856)), to(rgba(173, 173, 245, 0.829)));
+    background-image: linear-gradient(to right bottom, rgba(68, 0, 255, 0.856), rgba(173, 173, 245, 0.829));
+    text-align: center;
+    margin-right: 6px;
+  }
+  #main .tap .nav-link .svg svg {
+    margin: 0;
+  }
+  #main .tap .nav-link.active {
+    background-color: #282828;
+    color: #fff;
+  }
+  #main .tap ul {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    right: 90%;
+    z-index: 1000;
+  }
+  #main .tap ul a {
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-top: 2px;
+  }
+  #main .tap .subnav {
+    position: absolute;
+    top: -4PX;
+    left: 130px;
+    width: 148%;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 9px;
+    background: #2e77d0;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    z-index: 10;
+  }
+  #main .tap .subnav p {
+    font-weight: 400;
+  }
+  #main .tap .subnav .card-title {
+    font-size: 12px;
+  }
+  #main .tap .subnav .btns a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 24px;
+    width: 76px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: .95;
+    margin: 0 10px;
+  }
+  #main .tap .subnav .btns a:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #main .tap .subnav::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -21px;
+    border-color: transparent #2e77d0 transparent transparent;
+    border-style: solid;
+    border-width: 12px;
+  }
+  #main .tap .subnav--create {
+    left: 122px;
+  }
+  #main .tab-content .header {
+    background-color: #0303039a;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 58px;
+    overflow: hidden;
+    z-index: 20;
+  }
+  #main .tab-content .header .login-signup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  #main .tab-content .header .search {
+    display: none;
+    height: 40px;
+    width: 266px;
+    border-radius: 24px;
+    margin-left: 26em;
+    background-color: #fff;
+  }
+  #main .tab-content .header .search span {
+    background-color: #fff;
+    border-radius: 24px 0 0 24px;
+  }
+  #main .tab-content .header .search input {
+    height: 40px;
+    width: 83%;
+    border-radius: 0 24px 24px 0;
+    border: none;
+    outline: none;
+  }
+  #main .tab-content .header .header-search {
+    width: 100%;
+  }
+  #main .tab-content .header .btn {
+    width: 128px;
+    height: 40px;
+    line-height: 26px;
+    border-radius: 24px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+  }
+  #main .tab-content .header .btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #main .tab-content .bg-body {
+    background-color: #181818 !important;
+  }
+  #main .tab-content .bg-body .list-group {
+    padding-bottom: 1em;
+  }
+  #main .tab-content .bg-body .list-group .flex-nowrap {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  #main .tab-content .bg-body .list-group .flex-nowrap button, #main .tab-content .bg-body .list-group .flex-nowrap a {
+    width: 100%;
+  }
+  #main .tab-content .bg-body .list-group .list-heading {
+    padding: 0 1em;
+  }
+  #main .tab-content .bg-body .list-group .list-heading .list-title {
+    font-size: 26px;
+  }
+  #main .tab-content .bg-body .list-group .list-heading a:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .bg-body .list-group .list-heading .view-all {
+    font-size: 9px;
+    margin-top: 16px;
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .list-group .list-heading p {
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .list-group .card-search {
+    width: 100%;
+    height: 192px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  #main .tab-content .bg-body .list-group .card-search .img-rotate {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(25deg) translate(18%, -2%);
+            transform: rotate(25deg) translate(18%, -2%);
+  }
+  #main .tab-content .bg-body .list-group .card-search h5 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 12px;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhdam {
+    background-color: #27856a;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhduong {
+    background-color: #1e3264;
+  }
+  #main .tab-content .bg-body .list-group .card-search--tim {
+    background-color: #8d67ab;
+  }
+  #main .tab-content .bg-body .list-group .card-search--do {
+    background-color: #e8115b;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xam {
+    background-color: #535353;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhlot {
+    background-color: #c3f0c8;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhla {
+    background-color: #148a08;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhbien {
+    background-color: #477d95;
+  }
+  #main .tab-content .bg-body .list-group .card-search--dodam {
+    background-color: #8c1932;
+  }
+  #main .tab-content .bg-body .list-group .card-search--camdam {
+    background-color: #ba5d07;
+  }
+  #main .tab-content .bg-body .list-group .card-search--hong {
+    background-color: #dc148c;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhreu {
+    background-color: #608108;
+  }
+  #main .tab-content .bg-body .list-group .card-search--timdam {
+    background-color: #503750;
+  }
+  #main .tab-content .bg-body .list-group .card-search--dotuoi {
+    background-color: #e61e32;
+  }
+  #main .tab-content .bg-body .list-group .card-search--hongdam {
+    background-color: #af2896;
+  }
+  #main .tab-content .bg-body .list-group .card-search--cam {
+    background-color: #f59b23;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhbienlot {
+    background-color: #a0c3d2;
+  }
+  #main .tab-content .bg-body .list-group .card-search--docam {
+    background-color: #e13300;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhbiendam {
+    background-color: #0d73ec;
+  }
+  #main .tab-content .bg-body .list-group .card-search--camsang {
+    background-color: #ff6437;
+  }
+  #main .tab-content .bg-body .card {
+    border: none;
+    border-radius: 2px;
+    padding: 16px;
+    background-color: #1b1b1b;
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+  }
+  #main .tab-content .bg-body .card button {
+    position: absolute;
+    right: 14%;
+    top: 46%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1db954;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: default;
+    -webkit-box-shadow: 0 1px 5px #000;
+            box-shadow: 0 1px 5px #000;
+  }
+  #main .tab-content .bg-body .card button:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  #main .tab-content .bg-body .card .card-body {
+    padding: 0;
+  }
+  #main .tab-content .bg-body .card .card-body h5 {
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  #main .tab-content .bg-body .card .card-body p {
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .card .card-body p a {
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .card .card-body p a:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .bg-body .card:hover {
+    background-color: #2b2b2b;
+    cursor: pointer;
+  }
+  #main .tab-content .bg-body .card:hover button {
+    opacity: 1;
+    top: 44%;
+  }
+  #main .tab-content .bg-body-Top-hits {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 139, 118, 0.322)), color-stop(#394d41), color-stop(#2f3b33), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+    background-image: linear-gradient(to bottom, rgba(77, 139, 118, 0.322), #394d41, #2f3b33, #111, #111, #111, #111, #111, #111, #111, #111);
+  }
+  #main .tab-content .page-listenMusic .bg--Top-Hits {
+    background: url(../img/haanhtuan.jpg) center/cover no-repeat;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list {
+    position: relative;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card {
+    background: none;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body {
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body h5 {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body h2 {
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body p {
+    font-size: 12px;
+    color: #eee;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul {
+    padding: 0;
+    list-style-type: disc;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul li {
+    font-size: 12px;
+    margin-right: 20px;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul li a {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul li:first-child {
+    list-style: none;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading {
+    padding: 1em;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading p {
+    color: #ddd;
+    font-size: 8px;
+    font-weight: 400;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading p a {
+    font-family: 600;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading h1 {
+    font-weight: bolder;
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list {
+    background: #1a191946;
+    isolation: isolate;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .search-songs {
+    outline: none;
+    border: none;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .raiting-heart {
+    padding: 12px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1db954;
+    color: #fff;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: default;
+    -webkit-box-shadow: 0 1px 5px #000;
+            box-shadow: 0 1px 5px #000;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-menu a, #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-menu hr {
+    color: #eee;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-menu .active {
+    background: #333;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    text-transform: uppercase;
+    color: #dadada;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul {
+    list-style: none;
+    padding: 0;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li {
+    color: #999;
+    padding-bottom: 1.5em;
+    max-height: 66px;
+    overflow: hidden;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card {
+    background: none;
+    border: 0;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card img {
+    width: 46px;
+    height: 46px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body {
+    padding: 4px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body h5 {
+    margin: 0;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    max-height: 17px;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body p {
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-height: 24px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body p a {
+    font-size: 13px;
+    color: #999;
+    line-height: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body p a:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .time-play, #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .list-stt {
+    height: 66px;
+    line-height: 44px;
+  }
+  #main .tab-content .music-player {
+    background-color: #333333;
+    /* CD */
+    /* CONTROL */
+  }
+  #main .tab-content .music-player .cd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }
+  #main .tab-content .music-player .cd-thumb {
+    width: 80%;
+    padding-top: 80%;
+    border-radius: 50%;
+    background-size: cover;
+    margin: auto;
+  }
+  #main .tab-content .music-player .control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 18px 0 8px 0;
+  }
+  #main .tab-content .music-player .control .btn {
+    color: #fff;
+    padding: 18px;
+    font-size: 18px;
+  }
+  #main .tab-content .music-player .control .btn.active {
+    color: var(--primary-color);
+  }
+  #main .tab-content .music-player .control .btn-toggle-play {
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #1db954;
+  }
+  #main .tab-content .music-player .progress {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  #main .tab-content .music-player .progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    background-color: #1db954;
+    cursor: pointer;
+  }
+  #main .tab-content .clicked-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.901);
+    z-index: 3000;
+  }
+  #main .tab-content .clicked-btn .wrapper {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: opacity .2s linear, -webkit-transform .2s linear;
+    transition: opacity .2s linear, -webkit-transform .2s linear;
+    transition: opacity .2s linear, transform .2s linear;
+    transition: opacity .2s linear, transform .2s linear, -webkit-transform .2s linear;
+  }
+  #main .tab-content .clicked-btn .wrapper .box {
+    max-width: 24em;
+    height: 13em;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#509b82), to(#263133));
+    background-image: linear-gradient(to bottom, #509b82, #263133);
+    border-radius: 12px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .left img {
+    width: 100%;
+    margin-right: auto;
+    border-radius: 8px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right {
+    color: #fff;
+    opacity: .9;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right div {
+    border-radius: 24px;
+    margin-bottom: 4px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right div a {
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 800;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right .bg-light a {
+    color: #333;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right .btn {
+    padding: 0px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right .btn a {
+    padding-bottom: 8px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right p {
+    margin-top: 10px;
+    font-size: 8px;
+    font-weight: 600;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right p span {
+    font-weight: 600;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right p span a {
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right .btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+  #main .tab-content .clicked-btn .wrapper .close {
+    padding-top: 20px;
+    color: #dfd7d7;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  #main .tab-content .clicked-btn .wrapper .close:hover {
+    color: #Fff;
+  }
+  #main .tab-content .page-yourList, #main .tab-content .page-creatList {
+    height: 30em;
+  }
+  #main .bg-footer {
+    display: none !important;
+  }
+  #main .Cookies {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #main .nav-menu {
+    margin-bottom: auto;
+  }
+  #main .tap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 11;
+  }
+  #main .tap .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main .tap .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 47px;
+    font-size: 20px;
+    margin-left: 1em;
+    margin-bottom: 40px;
+  }
+  #main .tap .navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+  }
+  #main .tap .nav-link {
+    color: #b3b3b3;
+    text-align: start;
+    font-size: 9px;
+    font-weight: bold;
+    position: relative;
+    padding: 16px 16px 32px 16px;
+  }
+  #main .tap .nav-link svg {
+    margin-right: 6px;
+  }
+  #main .tap .nav-link .svg {
+    display: inline-block;
+    width: 24px;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(68, 0, 255, 0.856)), to(rgba(173, 173, 245, 0.829)));
+    background-image: linear-gradient(to right bottom, rgba(68, 0, 255, 0.856), rgba(173, 173, 245, 0.829));
+    text-align: center;
+    margin-right: 6px;
+  }
+  #main .tap .nav-link .svg svg {
+    margin: 0;
+  }
+  #main .tap .nav-link.active {
+    background-color: #282828;
+    color: #fff;
+  }
+  #main .tap ul {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    right: 90%;
+    z-index: 1000;
+  }
+  #main .tap ul a {
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-top: 2px;
+  }
+  #main .tap .invisible.subnav {
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+  }
+  #main .tap .subnav {
+    position: absolute;
+    top: -4PX;
+    left: 160px;
+    width: 148%;
+    border-radius: 8px;
+    padding: 16px;
+    background: #2e77d0;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+  #main .tap .subnav p {
+    font-weight: 400;
+  }
+  #main .tap .subnav .btns a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 24px;
+    width: 122px;
+    height: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: .95;
+  }
+  #main .tap .subnav .btns a:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #main .tap .subnav::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -21px;
+    border-color: transparent #2e77d0 transparent transparent;
+    border-style: solid;
+    border-width: 12px;
+  }
+  #main .tap .subnav--create {
+    left: 180px;
+  }
+  #main .tab-content {
+    padding-left: 16%;
+  }
+  #main .tab-content .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #030303a8;
+    height: 58px;
+    z-index: 10;
+  }
+  #main .tab-content .header .beLogin {
+    display: none;
+    padding-right: 1em;
+    max-width: 14em;
+  }
+  #main .tab-content .header .beLogin .nameUser {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: .5em;
+  }
+  #main .tab-content .header .search {
+    height: 40px;
+    width: 40%;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+  #main .tab-content .header .search span {
+    background-color: #fff;
+    border-radius: 24px 0 0 24px;
+  }
+  #main .tab-content .header .search input {
+    height: 40px;
+    width: 82%;
+    border-radius: 0 24px 24px 0;
+    border: none;
+    outline: none;
+  }
+  #main .tab-content .header .header-search {
+    width: 38%;
+  }
+  #main .tab-content .header .btn {
+    width: 98px;
+    height: 40px;
+    line-height: 26px;
+    border-radius: 24px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+  }
+  #main .tab-content .header .btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #main .tab-content .bg-body {
+    background-color: #181818 !important;
+    padding: 4em 1em 1em;
+  }
+  #main .tab-content .bg-body .list-group {
+    padding-bottom: 3em;
+  }
+  #main .tab-content .bg-body .list-group .row .col-md-3 {
+    width: 23%;
+  }
+  #main .tab-content .bg-body .list-group .row .col-md-4 {
+    padding: 1em !important;
+  }
+  #main .tab-content .bg-body .list-group .list-heading .list-title {
+    font-size: 24px;
+  }
+  #main .tab-content .bg-body .list-group .list-heading a:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .bg-body .list-group .list-heading .view-all {
+    font-size: 12px;
+    margin-top: 16px;
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .list-group .list-heading p {
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .list-group .card-search {
+    width: 100%;
+    height: 134px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  #main .tab-content .bg-body .list-group .card-search .img-rotate {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(25deg) translate(18%, -2%);
+            transform: rotate(25deg) translate(18%, -2%);
+  }
+  #main .tab-content .bg-body .list-group .card-search h5 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 12px;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhdam {
+    background-color: #27856a;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhduong {
+    background-color: #1e3264;
+  }
+  #main .tab-content .bg-body .list-group .card-search--tim {
+    background-color: #8d67ab;
+  }
+  #main .tab-content .bg-body .list-group .card-search--do {
+    background-color: #e8115b;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xam {
+    background-color: #535353;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhlot {
+    background-color: #c3f0c8;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhla {
+    background-color: #148a08;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhbien {
+    background-color: #477d95;
+  }
+  #main .tab-content .bg-body .list-group .card-search--dodam {
+    background-color: #8c1932;
+  }
+  #main .tab-content .bg-body .list-group .card-search--camdam {
+    background-color: #ba5d07;
+  }
+  #main .tab-content .bg-body .list-group .card-search--hong {
+    background-color: #dc148c;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhreu {
+    background-color: #608108;
+  }
+  #main .tab-content .bg-body .list-group .card-search--timdam {
+    background-color: #503750;
+  }
+  #main .tab-content .bg-body .list-group .card-search--dotuoi {
+    background-color: #e61e32;
+  }
+  #main .tab-content .bg-body .list-group .card-search--hongdam {
+    background-color: #af2896;
+  }
+  #main .tab-content .bg-body .list-group .card-search--cam {
+    background-color: #f59b23;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhbienlot {
+    background-color: #a0c3d2;
+  }
+  #main .tab-content .bg-body .list-group .card-search--docam {
+    background-color: #e13300;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhbiendam {
+    background-color: #0d73ec;
+  }
+  #main .tab-content .bg-body .list-group .card-search--camsang {
+    background-color: #ff6437;
+  }
+  #main .tab-content .bg-body .card {
+    border: none;
+    border-radius: 2px;
+    background-color: #1b1b1b;
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+  }
+  #main .tab-content .bg-body .card img {
+    width: 100%;
+  }
+  #main .tab-content .bg-body .card .click-to-play {
+    position: absolute;
+    right: 14%;
+    top: 46%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1db954;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: default;
+    -webkit-box-shadow: 0 1px 5px #000;
+            box-shadow: 0 1px 5px #000;
+  }
+  #main .tab-content .bg-body .card .click-to-play:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  #main .tab-content .bg-body .card .card-body {
+    padding: 0;
+  }
+  #main .tab-content .bg-body .card .card-body h5 {
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  #main .tab-content .bg-body .card .card-body p {
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .card .card-body p a {
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .card .card-body p a:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .bg-body .card:hover {
+    background-color: #2b2b2b;
+    cursor: pointer;
+  }
+  #main .tab-content .bg-body .card:hover button {
+    opacity: 1;
+    top: 44%;
+  }
+  #main .tab-content .bg-body-Top-hits {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 139, 118, 0.322)), color-stop(#394d41), color-stop(#2f3b33), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+    background-image: linear-gradient(to bottom, rgba(77, 139, 118, 0.322), #394d41, #2f3b33, #111, #111, #111, #111, #111, #111, #111, #111);
+  }
+  #main .tab-content .page-listenMusic .bg--Top-Hits {
+    background: url(../img/haanhtuan.jpg) -34px -360px/cover no-repeat;
+    background-attachment: fixed;
+    padding: 3em 3em 3em 2em;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list {
+    position: relative;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card {
+    padding: 0 1em;
+    background: none;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body {
+    padding: 0 0 0 1em;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body h5 {
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body h2 {
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: bolder;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body p {
+    font-size: 12px;
+    color: #c0bfbf;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul li {
+    font-size: 12px;
+    margin-right: 20px;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul li a {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul li:first-child {
+    list-style: none;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading {
+    padding: 1em;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading p {
+    color: #ddd;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading p a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading h1 {
+    font-weight: bolder;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list {
+    background: #1a191946;
+    isolation: isolate;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .search-songs {
+    outline: none;
+    border: none;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .raiting-heart {
+    padding: 12px;
+    cursor: pointer;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1db954;
+    color: #fff;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: pointer;
+    -webkit-box-shadow: 0 1px 5px #000;
+            box-shadow: 0 1px 5px #000;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-menu a, #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-menu hr {
+    color: #eee;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-menu .active {
+    background: #333;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-item:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3em;
+    text-transform: uppercase;
+    color: #dadada;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul {
+    list-style: none;
+    padding: 0;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li {
+    color: #999;
+    padding-bottom: 1.5em;
+    max-height: 66px;
+    overflow: hidden;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card {
+    background: none;
+    border: 0;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card img {
+    width: 46px;
+    height: 46px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body {
+    padding: 4px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body h5 {
+    margin: 0;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    max-height: 17px;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body p {
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-height: 24px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body p a {
+    font-size: 13px;
+    color: #999;
+    line-height: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body p a:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .time-play, #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .date {
+    font-size: 14px;
+    color: #b3b3b3;
+    height: 66px;
+    line-height: 44px;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .album {
+    font-size: 14px;
+    color: #b3b3b3;
+    height: 50px;
+    line-height: 44px;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .album:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .list-stt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70px;
+    font-size: 16px;
+  }
+  #main .tab-content .music-player {
+    background-color: rgba(51, 51, 51, 0.452);
+    /* CD */
+    /* CONTROL */
+  }
+  #main .tab-content .music-player .cd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: 60%;
+  }
+  #main .tab-content .music-player .cd-thumb {
+    width: 50%;
+    padding-top: 50%;
+    border-radius: 50%;
+    background-color: #333;
+    background-size: cover;
+    margin: auto;
+  }
+  #main .tab-content .music-player .control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 18px 0 8px 0;
+  }
+  #main .tab-content .music-player .control .btn {
+    color: #fff;
+    padding: 18px;
+    font-size: 18px;
+  }
+  #main .tab-content .music-player .control .btn.active {
+    color: var(--primary-color);
+  }
+  #main .tab-content .music-player .control .btn-toggle-play {
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #1db954;
+  }
+  #main .tab-content .music-player .progress {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  #main .tab-content .music-player .progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    background-color: #1db954;
+    cursor: pointer;
+  }
+  #main .tab-content .clicked-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.901);
+    z-index: 3000;
+  }
+  #main .tab-content .clicked-btn .wrapper {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: opacity .2s linear, -webkit-transform .2s linear;
+    transition: opacity .2s linear, -webkit-transform .2s linear;
+    transition: opacity .2s linear, transform .2s linear;
+    transition: opacity .2s linear, transform .2s linear, -webkit-transform .2s linear;
+  }
+  #main .tab-content .clicked-btn .wrapper .box {
+    max-width: 800px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#509b82), to(#263133));
+    background-image: linear-gradient(to bottom, #509b82, #263133);
+    padding: 64px;
+    border-radius: 12px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .left img {
+    width: 19em;
+    height: 19em;
+    max-width: 300px;
+    margin-right: auto;
+    border-radius: 8px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right {
+    color: #fff;
+    opacity: .9;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right div {
+    border-radius: 24px;
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right div a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 800;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right .bg-light a {
+    color: #333;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right p span {
+    font-weight: 700;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right p span a {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right .btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+  #main .tab-content .clicked-btn .wrapper .close {
+    padding-top: 20px;
+    color: #dfd7d7;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  #main .tab-content .clicked-btn .wrapper .close:hover {
+    color: #Fff;
+  }
+  #main .tab-content .page-yourList, #main .tab-content .page-creatList {
+    height: 66em;
+  }
+  #main .tab-content .icon-avatar {
+    height: 10em;
+  }
+  #main .tab-content .icon-avatar--heart {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(37, 2, 133, 0.856)), to(rgba(100, 100, 145, 0.829)));
+    background-image: linear-gradient(to right bottom, rgba(37, 2, 133, 0.856), rgba(100, 100, 145, 0.829));
+  }
+  #main .tab-content .icon-avatar--music {
+    background-color: #333;
+    border-radius: 4px;
+  }
+  #main .tab-content #nhung-bai-hat-yeu-thich {
+    height: 100vh;
+  }
+  #main .bg-footer {
+    background-image: -webkit-gradient(linear, left top, right top, from(#b917ab), to(#426ee9));
+    background-image: linear-gradient(to right, #b917ab, #426ee9);
+    height: 80px;
+    padding: 20px;
+    z-index: 25;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+  }
+  #main .bg-footer a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  #main .bg-footer .btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+    color: #00a2ff;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  #main .bg-footer .btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #main .nav-menu {
+    margin-bottom: auto;
+  }
+  #main .tap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 11;
+  }
+  #main .tap .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main .tap .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 47px;
+    font-size: 26px;
+    margin-left: 1em;
+    margin-bottom: 40px;
+  }
+  #main .tap .navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+  }
+  #main .tap .nav-link {
+    color: #b3b3b3;
+    text-align: start;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    padding: 16px;
+  }
+  #main .tap .nav-link svg {
+    margin-right: 6px;
+  }
+  #main .tap .nav-link .svg {
+    display: inline-block;
+    width: 24px;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(68, 0, 255, 0.856)), to(rgba(173, 173, 245, 0.829)));
+    background-image: linear-gradient(to right bottom, rgba(68, 0, 255, 0.856), rgba(173, 173, 245, 0.829));
+    text-align: center;
+    margin-right: 6px;
+  }
+  #main .tap .nav-link .svg svg {
+    margin: 0;
+  }
+  #main .tap .nav-link.active {
+    background-color: #282828;
+    color: #fff;
+  }
+  #main .tap ul {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    right: 90%;
+    z-index: 1000;
+  }
+  #main .tap ul a {
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-top: 2px;
+  }
+  #main .tap .invisible.subnav {
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+  }
+  #main .tap .subnav {
+    position: absolute;
+    top: -4PX;
+    left: 160px;
+    width: 148%;
+    border-radius: 8px;
+    padding: 16px;
+    background: #2e77d0;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+  #main .tap .subnav p {
+    font-weight: 400;
+  }
+  #main .tap .subnav .btns a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 24px;
+    width: 122px;
+    height: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: .95;
+  }
+  #main .tap .subnav .btns a:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #main .tap .subnav::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -21px;
+    border-color: transparent #2e77d0 transparent transparent;
+    border-style: solid;
+    border-width: 12px;
+  }
+  #main .tap .subnav--create {
+    left: 180px;
+  }
+  #main .tab-content {
+    padding-left: 16%;
+  }
+  #main .tab-content .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #030303a8;
+    height: 58px;
+    z-index: 10;
+  }
+  #main .tab-content .header .beLogin {
+    display: none;
+    padding-right: 1em;
+    max-width: 14em;
+  }
+  #main .tab-content .header .beLogin .nameUser {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: .5em;
+  }
+  #main .tab-content .header .search {
+    height: 40px;
+    width: 40%;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+  #main .tab-content .header .search span {
+    background-color: #fff;
+    border-radius: 24px 0 0 24px;
+  }
+  #main .tab-content .header .search input {
+    height: 40px;
+    width: 88%;
+    border-radius: 0 24px 24px 0;
+    border: none;
+    outline: none;
+  }
+  #main .tab-content .header .header-search {
+    width: 30%;
+  }
+  #main .tab-content .header .btn {
+    width: 128px;
+    height: 40px;
+    line-height: 26px;
+    border-radius: 24px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+  }
+  #main .tab-content .header .btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #main .tab-content .bg-body {
+    background-color: #181818 !important;
+    padding: 70px 28px 0;
+  }
+  #main .tab-content .bg-body .list-group {
+    padding-bottom: 3em;
+  }
+  #main .tab-content .bg-body .list-group .row .col-md-3 {
+    width: 23%;
+  }
+  #main .tab-content .bg-body .list-group .list-heading .list-title {
+    font-size: 24px;
+  }
+  #main .tab-content .bg-body .list-group .list-heading a:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .bg-body .list-group .list-heading .view-all {
+    font-size: 12px;
+    margin-top: 16px;
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .list-group .list-heading p {
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .list-group .card-search {
+    height: 192px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 2em;
+  }
+  #main .tab-content .bg-body .list-group .card-search .img-rotate {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(25deg) translate(18%, -2%);
+            transform: rotate(25deg) translate(18%, -2%);
+  }
+  #main .tab-content .bg-body .list-group .card-search h5 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 12px;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhdam {
+    background-color: #27856a;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhduong {
+    background-color: #1e3264;
+  }
+  #main .tab-content .bg-body .list-group .card-search--tim {
+    background-color: #8d67ab;
+  }
+  #main .tab-content .bg-body .list-group .card-search--do {
+    background-color: #e8115b;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xam {
+    background-color: #535353;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhlot {
+    background-color: #c3f0c8;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhla {
+    background-color: #148a08;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhbien {
+    background-color: #477d95;
+  }
+  #main .tab-content .bg-body .list-group .card-search--dodam {
+    background-color: #8c1932;
+  }
+  #main .tab-content .bg-body .list-group .card-search--camdam {
+    background-color: #ba5d07;
+  }
+  #main .tab-content .bg-body .list-group .card-search--hong {
+    background-color: #dc148c;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhreu {
+    background-color: #608108;
+  }
+  #main .tab-content .bg-body .list-group .card-search--timdam {
+    background-color: #503750;
+  }
+  #main .tab-content .bg-body .list-group .card-search--dotuoi {
+    background-color: #e61e32;
+  }
+  #main .tab-content .bg-body .list-group .card-search--hongdam {
+    background-color: #af2896;
+  }
+  #main .tab-content .bg-body .list-group .card-search--cam {
+    background-color: #f59b23;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhbienlot {
+    background-color: #a0c3d2;
+  }
+  #main .tab-content .bg-body .list-group .card-search--docam {
+    background-color: #e13300;
+  }
+  #main .tab-content .bg-body .list-group .card-search--xanhbiendam {
+    background-color: #0d73ec;
+  }
+  #main .tab-content .bg-body .list-group .card-search--camsang {
+    background-color: #ff6437;
+  }
+  #main .tab-content .bg-body .card {
+    border: none;
+    border-radius: 2px;
+    padding: 16px;
+    background-color: #1b1b1b;
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+  }
+  #main .tab-content .bg-body .card button {
+    position: absolute;
+    right: 14%;
+    top: 46%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1db954;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: default;
+    -webkit-box-shadow: 0 1px 5px #000;
+            box-shadow: 0 1px 5px #000;
+  }
+  #main .tab-content .bg-body .card button:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  #main .tab-content .bg-body .card .card-body {
+    padding: 0;
+  }
+  #main .tab-content .bg-body .card .card-body h5 {
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  #main .tab-content .bg-body .card .card-body p {
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .card .card-body p a {
+    color: #b3b3b3;
+  }
+  #main .tab-content .bg-body .card .card-body p a:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .bg-body .card:hover {
+    background-color: #2b2b2b;
+    cursor: pointer;
+  }
+  #main .tab-content .bg-body .card:hover button {
+    opacity: 1;
+    top: 44%;
+  }
+  #main .tab-content .bg-body-Top-hits {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 139, 118, 0.322)), color-stop(#394d41), color-stop(#2f3b33), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), color-stop(#111), to(#111));
+    background-image: linear-gradient(to bottom, rgba(77, 139, 118, 0.322), #394d41, #2f3b33, #111, #111, #111, #111, #111, #111, #111, #111);
+  }
+  #main .tab-content .page-listenMusic .bg--Top-Hits {
+    background: url(../img/haanhtuan.jpg) 138px -500px/cover no-repeat;
+    background-attachment: fixed;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list {
+    position: relative;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card {
+    padding: 40px;
+    background: none;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body {
+    color: #fff;
+    padding: 0 1em;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body h2 {
+    text-transform: capitalize;
+    font-size: 56px;
+    font-weight: bolder;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body p {
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: disc;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul li {
+    font-size: 12px;
+    margin-right: 20px;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul li a {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .card .card-body ul li:first-child {
+    list-style: none;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading {
+    padding: 5em;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading p {
+    font-weight: 400;
+    color: #eee;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading p a {
+    font-family: 600;
+    color: #fff;
+    font-weight: 800;
+  }
+  #main .tab-content .page-listenMusic .bg__top-list .heading h1 {
+    font-weight: bolder;
+    font-size: 90px;
+    text-transform: uppercase;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list {
+    background: #1a191946;
+    isolation: isolate;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .search-songs {
+    outline: none;
+    border: none;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .raiting-heart {
+    padding: 12px;
+    cursor: pointer;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1db954;
+    color: #fff;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: pointer;
+    -webkit-box-shadow: 0 1px 5px #000;
+            box-shadow: 0 1px 5px #000;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-menu a, #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-menu hr {
+    color: #eee;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-menu .active {
+    background: #333;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .options-list .dropdown-item:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3em;
+    text-transform: uppercase;
+    color: #dadada;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul {
+    list-style: none;
+    padding: 0;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li {
+    color: #999;
+    padding-bottom: 1.5em;
+    max-height: 66px;
+    overflow: hidden;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card {
+    background: none;
+    border: 0;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card img {
+    width: 46px;
+    height: 46px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body {
+    padding: 4px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body h5 {
+    margin: 0;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    max-height: 17px;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body p {
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-height: 24px;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body p a {
+    font-size: 13px;
+    color: #999;
+    line-height: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul li .card .card-body p a:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .time-play, #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .date {
+    font-size: 14px;
+    color: #b3b3b3;
+    height: 66px;
+    line-height: 44px;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .album {
+    font-size: 14px;
+    color: #b3b3b3;
+    height: 50px;
+    line-height: 44px;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .album:hover {
+    text-decoration: underline;
+  }
+  #main .tab-content .page-listenMusic .bg__body-list .play-list .play-list__body ul .list-stt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70px;
+    font-size: 16px;
+  }
+  #main .tab-content .music-player {
+    background-color: rgba(51, 51, 51, 0.829);
+    /* CD */
+    /* CONTROL */
+  }
+  #main .tab-content .music-player .cd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }
+  #main .tab-content .music-player .cd-thumb {
+    width: 20%;
+    padding-top: 20%;
+    border-radius: 50%;
+    background-size: cover;
+    margin: auto;
+  }
+  #main .tab-content .music-player .control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 18px 0 8px 0;
+  }
+  #main .tab-content .music-player .control .btn {
+    color: #fff;
+    padding: 18px;
+    font-size: 18px;
+  }
+  #main .tab-content .music-player .control .btn.active {
+    color: var(--primary-color);
+  }
+  #main .tab-content .music-player .control .btn-toggle-play {
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #1db954;
+  }
+  #main .tab-content .music-player .progress {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  #main .tab-content .music-player .progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    background-color: #1db954;
+    cursor: pointer;
+  }
+  #main .tab-content .clicked-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.901);
+    z-index: 3000;
+  }
+  #main .tab-content .clicked-btn .wrapper {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: opacity .2s linear, -webkit-transform .2s linear;
+    transition: opacity .2s linear, -webkit-transform .2s linear;
+    transition: opacity .2s linear, transform .2s linear;
+    transition: opacity .2s linear, transform .2s linear, -webkit-transform .2s linear;
+  }
+  #main .tab-content .clicked-btn .wrapper .box {
+    max-width: 800px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#509b82), to(#263133));
+    background-image: linear-gradient(to bottom, #509b82, #263133);
+    padding: 64px;
+    border-radius: 12px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .left img {
+    max-width: 300px;
+    margin-right: auto;
+    border-radius: 8px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right {
+    color: #fff;
+    opacity: .9;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right div {
+    border-radius: 24px;
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right div a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 800;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right .bg-light a {
+    color: #333;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right p span {
+    font-weight: 700;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right p span a {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  #main .tab-content .clicked-btn .wrapper .box .right .btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+  #main .tab-content .clicked-btn .wrapper .close {
+    padding-top: 20px;
+    color: #dfd7d7;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  #main .tab-content .clicked-btn .wrapper .close:hover {
+    color: #Fff;
+  }
+  #main .tab-content .page-yourList, #main .tab-content .page-creatList {
+    height: 60em;
+  }
+  #main .tab-content .icon-avatar {
+    height: 10em;
+  }
+  #main .tab-content .icon-avatar--heart {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(37, 2, 133, 0.856)), to(rgba(100, 100, 145, 0.829)));
+    background-image: linear-gradient(to right bottom, rgba(37, 2, 133, 0.856), rgba(100, 100, 145, 0.829));
+  }
+  #main .tab-content .icon-avatar--music {
+    background-color: #333;
+    border-radius: 4px;
+  }
+  #main .bg-footer {
+    background-image: -webkit-gradient(linear, left top, right top, from(#b917ab), to(#426ee9));
+    background-image: linear-gradient(to right, #b917ab, #426ee9);
+    height: 80px;
+    padding: 20px;
+    z-index: 25;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+  }
+  #main .bg-footer a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  #main .bg-footer .btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+    color: #00a2ff;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  #main .bg-footer .btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+#signUp .signup {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 1em 1em 8em 1em;
+}
+
+#signUp .signup .brand {
+  padding-top: 40px;
+  font-size: 16px;
+}
+
+#signUp .signup .brand img {
+  height: 30px;
+  width: 30px;
+}
+
+#signUp .signup h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  margin-top: 40px;
+}
+
+#signUp .signup .signupFB {
+  width: 60%;
+  border-radius: 28px;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 0;
+}
+
+#signUp .signup a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#signUp .signup .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+#signUp .signup p {
+  font-size: 12px;
+  text-align: start;
+  color: #000;
+}
+
+#signUp .signUped {
+  background: rgba(29, 29, 29, 0.9);
+  font-size: 24px;
+  bottom: 0;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+#signUp .signUped .box {
+  border-radius: 12px;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#477c6f), to(#703939));
+  background-image: linear-gradient(to bottom, #477c6f, #703939);
+}
+
+#wrapper-login {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  overflow: auto;
+  background: #fff;
+  padding: 1em;
+  z-index: 50;
+}
+
+#wrapper-login #login .login {
+  max-width: 450px;
+  width: 100%;
+}
+
+#wrapper-login #login .login .loginWith {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#wrapper-login #login .login .loginWith a {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrapper-login #login .login .loginWith a:first-child {
+  background-color: #3b5998;
+}
+
+#wrapper-login #login .login .loginWith a:hover {
+  background-color: #999;
+  color: #fff !important;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+#wrapper-login #login .login .loginWith a:first-child:hover {
+  background-color: #3b5998;
+  opacity: .7;
+}
+
+#wrapper-login #login .login-btn, #wrapper-login #login .signUpEnd {
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#wrapper-login #login .login-btn:hover, #wrapper-login #login .signUpEnd:hover {
+  opacity: .7;
+}
+
+#wrapper-login #login .signUpEnd {
+  color: #333;
+}
+
+#wrapper-login #login .signUpEnd:hover {
+  background-color: #999;
+  color: #fff;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+#wrapper-login .loginEd {
+  background: rgba(29, 29, 29, 0.9);
+  font-size: 24px;
+  bottom: 0;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+#wrapper-login .loginEd .box {
+  border-radius: 12px;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#477c6f), to(#703939));
+  background-image: linear-gradient(to bottom, #477c6f, #703939);
+}
+
+.or {
+  color: #7f7f7f;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.or::before {
+  content: "";
+  border-top: 1px solid;
+  width: 38%;
+  position: absolute;
+  top: 48%;
+  left: 5%;
+}
+
+.or::after {
+  content: "";
+  border-top: 1px solid #7f7f7f;
+  width: 38%;
+  position: absolute;
+  top: 48%;
+  right: 5%;
+}
+
+form .form-group {
+  padding-bottom: 24px;
+}
+
+form .form-group input {
+  padding: 14px;
+}
+
+form .form-label {
+  font-size: 14px;
+  color: #000;
+  font-weight: bolder;
+}
+
+form .form-check {
+  padding: 0;
+}
+
+form .form-check label {
+  font-size: 14px;
+}
+
+form .btn {
+  padding: 12px 40px;
+  border-radius: 24px;
+  background-color: #1db954;
+}
+
+form .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+/*# sourceMappingURL=style.css.map */
